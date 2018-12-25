@@ -6,7 +6,7 @@ public class Planet {
   public double mass;
   public String imgFileName;
 
-  public static final double gConstant = 6.67e-11;
+  private static final double gConstant = 6.67e-11;
 
   public Planet(double xP, double yP, double xV, double yV, double m, String img){
     xxPos = xP;
@@ -105,8 +105,8 @@ public class Planet {
    * @param p
    * @return
    */
-  public boolean equals(Planet p){
-    return (mass == p.mass);
+  private boolean equals(Planet p){
+    return (mass == p.mass && xxPos == p.xxPos);
   }
 
   /**
