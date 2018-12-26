@@ -19,6 +19,10 @@ public class TestPalindrome {
 
     @Test
     public void testIsPalindrome() {
+        int a = 'a';
+        int b = 'A';
+        System.out.println(a);
+        System.out.println(b);
         assertTrue(palindrome.isPalindrome("c"));
         assertTrue(palindrome.isPalindrome(""));
         assertTrue(palindrome.isPalindrome("cc"));
