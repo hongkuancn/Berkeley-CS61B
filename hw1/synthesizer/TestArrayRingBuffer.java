@@ -15,6 +15,12 @@ public class TestArrayRingBuffer {
     }
 
     @Test(expected = RuntimeException.class)
+    public void testPeek() {
+        ArrayRingBuffer<Integer> arb = new ArrayRingBuffer<>(10);
+        arb.peek();
+    }
+
+    @Test(expected = RuntimeException.class)
     public void testFull() {
         ArrayRingBuffer<Integer> arb = new ArrayRingBuffer<>(10);
         arb.enqueue(0);
