@@ -1,7 +1,8 @@
 public class ArrayDeque<T> {
 
     /**
-     * The first element is sentinel.next, the last element is sentinel.prev.
+     * firstPointer is empty space for next first element
+     * lastPointer is empty space for next last element
      */
     private T[] items;
     private int nextFirst;
